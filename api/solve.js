@@ -8,7 +8,7 @@ export default async function handler(req, res) {
   const { title, options } = req.body || {};
 
   const response = await client.responses.create({
-    model: "gpt-5.3-mini",
+    model: "gpt-4o",
     input: `
 题目：${title}
 选项：${options || "无"}
